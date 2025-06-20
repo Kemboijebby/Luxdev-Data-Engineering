@@ -23,29 +23,38 @@ The course covered core and advanced topics in modern data engineering including
 
 ---
 
-## 📁 Repo Structure
-
 luxdev-data-engineering/
 │
+├── README.md                          # Course summary and highlights
+│
 ├── week-01-environment-setup/
+│   ├── notes.md
+│   ├── lab/                           # PostgreSQL + Azure Blob lab
+│   └── mini-project/
+│
 ├── week-02-sql-essentials/
+│   ├── notes.md
+│   ├── sql-practice/
+│   ├── data-modeling/
+│   └── mini-project-star-schema/
+│
 ├── week-03-etl-pipelines/
-├── week-04-airflow-intro/
+│   ├── theory.md
+│   ├── python-etl/
+│   └── mini-project-sales-pipeline/
 │
-├── week-05-data-warehousing/
-├── week-06-data-governance/
-├── week-07-kafka-streaming/
-├── week-08-batch-vs-stream/
+├── week-04-apache-airflow/
+│   ├── dag-practice/
+│   ├── airflow-postgres-blob/
+│   └── mini-project-etl-automation/
 │
-├── week-09-ml-pipelines/
-├── week-10-spark-pyspark/
-├── week-11-advanced-airflow/
-├── week-12-delta-lake/
+├── ...
 │
 ├── week-13-batch-pipeline/
 ├── week-14-realtime-pipeline/
 ├── week-15-integration/
-├── week-16-final-presentation/
-│
-├── README.md
-└── .gitignore
+├── week-16-final-capstone/
+│   ├── final-presentation.pdf
+│   ├── notebooks/
+│   └── pipeline-code/
+
