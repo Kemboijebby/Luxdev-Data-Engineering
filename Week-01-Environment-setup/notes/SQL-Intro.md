@@ -19,153 +19,128 @@ SQL is used to perform tasks such as:
 - **Microsoft SQL Server**: Enterprise-grade database system by Microsoft.
 - **Oracle Database**: Commercial DBMS used in large systems.
 
----
+--
+# SQL Basics
 
-## 2. SELECT Statement
+This guide covers fundamental SQL concepts like selecting data, filtering with conditions, using JOINs, and grouping data for summaries.
 
-The `SELECT` statement is the most commonly used SQL command, allowing users to retrieve data from tables.
+## 1. Selecting Data
 
-**Syntax**:  
+### Select Specific Columns:
 ```sql
-SELECT column1, column2 FROM table_name;
+SELECT column1, column2 FROM table_name
+
 To retrieve all columns:
 
-sql
-Copy
-Edit
-SELECT * FROM table_name;
-Examples:
-Example 1:
+SELECT * 
+FROM table_name;
 
-sql
-Copy
-Edit
-SELECT name, age FROM students;
-Example 2:
+🔹 Examples
 
-sql
-Copy
-Edit
-SELECT * FROM employees;
-Example 3:
+-- Example 1: Select specific columns
+SELECT name, age 
+FROM students;
 
-sql
-Copy
-Edit
-SELECT name, salary * 1.10 AS new_salary FROM employees;
-Using Aliases (AS): Helps rename columns in the result set.
+-- Example 2: Select all columns
+SELECT * 
+FROM employees;
+
+-- Example 3: Use of alias
+SELECT name, salary * 1.10 AS new_salary 
+FROM employees;
 
 3. WHERE Clause
-The WHERE clause filters rows based on a specified condition.
 
-Syntax:
+Filters rows based on a specified condition.
+🔹 Syntax
 
-sql
-Copy
-Edit
-SELECT columns FROM table WHERE condition;
-Common Comparison Operators:
-= (equals)
+SELECT column1, column2 
+FROM table_name 
+WHERE condition;
 
-<> (not equals)
+🔹 Operators
 
-> (greater than)
+Comparison:
 
-< (less than)
+    =, <>, >, <, >=, <=
 
->= (greater than or equal to)
+Logical:
 
-<= (less than or equal to)
+    AND, OR, NOT
 
-Logical Operators:
-AND
+Others:
 
-OR
+    BETWEEN, LIKE, IN
 
-NOT
+🔹 Examples
 
-Other Operators:
-BETWEEN: Range filtering
+-- Employees with salary greater than 50,000
+SELECT * 
+FROM employees 
+WHERE salary > 50000;
 
-LIKE: Pattern matching ('%a' ends with 'a', 'a%' starts with 'a')
+-- Customers with names starting with 'A'
+SELECT * 
+FROM customers 
+WHERE name LIKE 'A%';
 
-IN: Matches any value in a list
+-- Orders with certain statuses
+SELECT * 
+FROM orders 
+WHERE status IN ('pending', 'processing');
 
-Examples:
-Example 1:
-
-sql
-Copy
-Edit
-SELECT * FROM employees WHERE salary > 50000;
-Example 2:
-
-sql
-Copy
-Edit
-SELECT * FROM customers WHERE name LIKE 'A%';
-Example 3:
-
-sql
-Copy
-Edit
-SELECT * FROM orders WHERE status IN ('pending', 'processing');
 4. JOINs
-JOINs combine records from two or more tables based on a related column between them.
 
-Types of JOINs:
-INNER JOIN: Returns only matching rows.
+JOINs combine rows from two or more tables based on related columns.
+🔹 Types of JOINs
 
-LEFT JOIN: Returns all rows from the left table, and matched rows from the right.
+    INNER JOIN: Only matching rows.
 
-RIGHT JOIN: Opposite of LEFT JOIN (not supported in all DBs).
+    LEFT JOIN: All from left + matched from right.
 
-FULL JOIN: Returns all rows from both tables with matches where possible.
+    RIGHT JOIN: All from right + matched from left.
 
-Example INNER JOIN:
-sql
-Copy
-Edit
+    FULL JOIN: All from both sides (if supported).
+
+🔹 Example: INNER JOIN
+
 SELECT orders.id, customers.name 
 FROM orders
-JOIN customers ON orders.customer_id = customers.id;
-Example LEFT JOIN:
-sql
-Copy
-Edit
+INNER JOIN customers 
+ON orders.customer_id = customers.id;
+
+🔹 Example: LEFT JOIN
+
 SELECT customers.name, orders.id 
 FROM customers
-LEFT JOIN orders ON customers.id = orders.customer_id;
-JOINs are essential for normalized databases where data is split across multiple tables.
+LEFT JOIN orders 
+ON customers.id = orders.customer_id;
 
 5. GROUP BY Clause
-GROUP BY groups rows that have the same values into summary rows. It is often used with aggregate functions: COUNT(), SUM(), AVG(), MAX(), MIN().
 
-Syntax:
+Groups rows based on column values and is used with aggregate functions.
+🔹 Syntax
 
-sql
-Copy
-Edit
-SELECT column, AGG_FUNCTION(column) FROM table GROUP BY column;
-Examples:
-Example 1:
+SELECT column, AGG_FUNCTION(column)
+FROM table_name
+GROUP BY column;
 
-sql
-Copy
-Edit
-SELECT department, COUNT(*) FROM employees GROUP BY department;
-Example 2:
+🔹 Examples
 
-sql
-Copy
-Edit
-SELECT status, SUM(total) FROM orders GROUP BY status;
-GROUP BY can be combined with WHERE and HAVING:
+-- Count employees in each department
+SELECT department, COUNT(*) 
+FROM employees 
+GROUP BY department;
 
-Example 3:
+-- Sum of orders by status
+SELECT status, SUM(total) 
+FROM orders 
+GROUP BY status;
 
-sql
-Copy
-Edit
-SELECT department, AVG(salary) FROM employees
-WHERE salary > 30000 GROUP BY department HAVING AVG(salary) > 50000;
+🔹 With WHERE and HAVING
+
+SELECT department, AVG(salary)
+FROM employees
+WHERE salary > 30000
+GROUP BY department
+HAVING AVG(salary) > 50000;
