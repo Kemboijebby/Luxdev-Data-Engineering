@@ -9,7 +9,7 @@ The course covered core and advanced topics in modern data engineering including
 - Batch and stream processing with Spark, Flink & Kafka
 - Data governance, security, and real-time architecture
 - Final integrated capstone project (batch + stream)
-
+  
 ---
 
 ## 📆 Weekly Breakdown (Summary)
