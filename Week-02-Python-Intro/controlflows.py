@@ -7,7 +7,7 @@ elif num < 0:
     print("The number is negative.")
 else:
     print("The number is zero.")
-
+    
 # Create a program that checks if someone is eligible to vote.
 age = int(input('Enter your age:'))
 citizenship = input("What is your citizenship? ").strip().lower()
