@@ -1,13 +1,13 @@
 # EXERCISES
 # Print the type of 42, 3.14, and 'hello'.
 
-# print(type(42))
-# print(type(3.12))
-# print(type('helloo'))
+print(type(42))
+print(type(3.12))
+print(type('helloo'))
 
 # Convert a string '100' to an integer.
 string = int('100')
-# print(type(string))
+print(type(string))
 
 # Add an integer and a float together. What is the result?
 x = 3
