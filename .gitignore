@@ -1,0 +1,21 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+env/
+.venv/
+Lib/
+Scripts/
+bin/
+Include/
+
+# Ignore Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
+
+# OS and log files
+.DS_Store
+*.log
