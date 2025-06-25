@@ -21,5 +21,31 @@ The course covered core and advanced topics in modern data engineering including
 | 3     | Advanced Data Engineering         | Machine Learning Pipelines, Spark, Advanced Airflow, Delta Lake              |
 | 4     | Capstone Projects                 | Batch + Real-time Pipelines, Integration, Final Presentation                 |
 
+---
 
+## 📁 Repo Structure
 
+luxdev-data-engineering/
+│
+├── week-01-environment-setup/
+├── week-02-sql-essentials/
+├── week-03-etl-pipelines/
+├── week-04-airflow-intro/
+│
+├── week-05-data-warehousing/
+├── week-06-data-governance/
+├── week-07-kafka-streaming/
+├── week-08-batch-vs-stream/
+│
+├── week-09-ml-pipelines/
+├── week-10-spark-pyspark/
+├── week-11-advanced-airflow/
+├── week-12-delta-lake/
+│
+├── week-13-batch-pipeline/
+├── week-14-realtime-pipeline/
+├── week-15-integration/
+├── week-16-final-presentation/
+│
+├── README.md
+└── .gitignore
