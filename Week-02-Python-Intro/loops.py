@@ -1,20 +1,20 @@
 # EXERCISES
 # Use a for loop to print numbers from 1 to 10.
-# for i in range(1, 11):
-    # print(i)
+for i in range(1, 11):
+    print(i)
 
 # Use a while loop to print numbers until the user enters stop.
-# while True:
-#     myinput = input("Enter something (type 'stop' to end): ")
-#     if myinput.lower() == 'stop':
-#         break
-    # print(myinput)
+while True:
+    myinput = input("Enter something (type 'stop' to end): ")
+    if myinput.lower() == 'stop':
+        break
+    print(myinput)
 
 
 # Write a loop that prints even numbers from 1 to 20.
-# for i in range(1,21):
-#     if i % 2 == 0:
-#       print(i)
+for i in range(1,21):
+    if i % 2 == 0:
+      print(i)
        
 # Explain what break and continue do in your own words.
     #  Continue- Skips current iteration, continues to next

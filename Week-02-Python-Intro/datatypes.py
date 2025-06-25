@@ -13,11 +13,12 @@ string = int('100')
 x = 3
 y = 3.14
 addition = x + y
-# print(addition)
+print(addition)
+
 # What happens when you try to multiply a string by a number?
 z = 'anitah'
 multi = z * x
-# print(multi)
+print(multi)
 
 # CHALLENGE
 # Write a program that:

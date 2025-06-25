@@ -9,14 +9,14 @@ details = {'Name':'Anitah',
 # print(details['Name'])
 
 # Define a tuple with three numbers. Try modifying it. What happens?
-# numbers = (1,2,3,4,5)
-# numbers[3]=10
-# print(numbers)
+numbers = (1,2,3,4,5)
+numbers[3]=10  #error
+print(numbers)
 
 # Create a set from a list with duplicate values.
 mylist =[1, 2, 2, 3, 4, 4, 5, 5, 5]
 unique = set(mylist)
-# print(unique)
+print(unique)
 
 # CHALLENGE
 # # Step 1: Create an empty list

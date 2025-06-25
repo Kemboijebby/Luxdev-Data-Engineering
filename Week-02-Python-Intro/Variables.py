@@ -15,12 +15,12 @@ y= 5
 
 #Assign a string to a variable and print it.
 name = 'Kairo Miller'
-#print(name)
+print(name)
 
 #Challenge
 #Write a program that asks the user to input their name and age, and then prints a greeting.
 age2 = int(input('Enter your age :'))
 name2 = input('Enter your name :')
 
-print(f'Hello,please confirm that your name is {name2}, and your age {age2}')
+print(f'Hello,please confirm that your name is {name2} and your age {age2}')
 
