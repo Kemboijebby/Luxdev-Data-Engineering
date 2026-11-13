@@ -1,51 +1,38 @@
-# LuxDevHQ Data Engineering Bootcamp
+# LuxDevHQ Data Engineering Learning Portfolio
 
-This repository contains notes, labs, and projects from my 4-month Data Engineering Bootcamp at LuxDevHQ.  
-The course covered core and advanced topics in modern data engineering including:
+This repository preserves selected notes and exercises from a four-month Data Engineering programme at LuxDevHQ. It is a learning archive rather than a single deployable pipeline.
 
-- Python & SQL for data transformation
-- Cloud platforms (Azure & AWS)
-- Data pipeline orchestration with Apache Airflow
-- Batch and stream processing with Spark, Flink & Kafka
-- Data governance, security, and real-time architecture
-- Final integrated capstone project (batch + stream)
-  
----
+## Topics represented in the repository
 
-## 📆 Weekly Breakdown (Summary)
+- Python foundations and programming exercises
+- SQL fundamentals and database concepts
+- Linux and development-environment setup
+- Cloud computing concepts
+- Data governance and security notes
+- Advanced Python exercises
 
-| Month | Focus                             | Topics Covered                                                                 |
-|-------|-----------------------------------|--------------------------------------------------------------------------------|
-| 1     | Foundations                       | Python, SQL, PostgreSQL, Cloud Basics, ETL, Airflow                           |
-| 2     | Intermediate Tools & Concepts     | Data Lakes, Warehousing, Governance, Real-time Kafka & Stream Processing     |
-| 3     | Advanced Data Engineering         | Machine Learning Pipelines, Spark, Advanced Airflow, Delta Lake              |
-| 4     | Capstone Projects                 | Batch + Real-time Pipelines, Integration, Final Presentation                 |
+The wider programme covered Python, SQL, cloud platforms, ETL, orchestration, and modern data engineering concepts. Only topics represented by files in this repository should be treated as demonstrated project evidence.
 
----
+## Current repository contents
 
-## 📁 Repo Structure
+```text
+.
+├── Week-01-Environment-setup/
+│   └── notes/
+├── Week-02-Python-Intro/
+└── Week-04-Advanced/
+```
 
-luxdev-data-engineering/
-│
-├── week-01-environment-setup/
-├── week-02-sql-essentials/
-├── week-03-etl-pipelines/
-├── week-04-airflow-intro/
-│
-├── week-05-data-warehousing/
-├── week-06-data-governance/
-├── week-07-kafka-streaming/
-├── week-08-batch-vs-stream/
-│
-├── week-09-ml-pipelines/
-├── week-10-spark-pyspark/
-├── week-11-advanced-airflow/
-├── week-12-delta-lake/
-│
-├── week-13-batch-pipeline/
-├── week-14-realtime-pipeline/
-├── week-15-integration/
-├── week-16-final-presentation/
-│
-├── README.md
-└── .gitignore
+## Getting started
+
+The repository currently contains standalone learning exercises rather than one application with a unified runtime. Open the relevant `.py` files and run them with a supported Python 3 interpreter.
+
+For SQL notes and exercises, use the database engine specified by the individual exercise.
+
+## Repository maintenance
+
+This is a historical learning archive. It may contain exercises with different levels of completeness and should not be interpreted as a production data platform. Generated Python environments, package installations, bytecode, and local configuration do not belong in source control; use a virtual environment locally and keep it out of Git.
+
+## Technologies and concepts
+
+Python · SQL · Linux · Cloud fundamentals · Data governance · Data engineering foundations
